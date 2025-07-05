@@ -1,13 +1,91 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #0d0d0d;
+  color: #ccffcc;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  background-color: #003300;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
-    font-size: 2rem;
-    color: #333;
+  margin: 0;
+  font-size: 2.5rem;
+  color: #aaffaa;
+}
+
+h2 {
+  border-bottom: 2px solid #339933;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #009900;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00cc00;
+}
+
+main {
+  padding: 2rem 0;
+  line-height: 1.6;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #003300;
+  font-size: 0.9rem;
+  color: #aaffaa;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Tema Claro */
+.light-theme {
+  background-color: #fdfdfd;
+  color: #000;
+}
+
+.light-theme header,
+.light-theme footer {
+  background-color: #ccffcc;
+  color: #000;
+}
+
+.light-theme h1 {
+  color: #004400;
+}
+
+.light-theme button {
+  background-color: #339933;
+  color: #fff;
+}
+
+.light-theme button:hover {
+  background-color: #44aa44;
 }
