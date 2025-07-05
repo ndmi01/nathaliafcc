@@ -1,56 +1,59 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nathália Ferreira Carneiro da Costa</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Nathália Ferreira Carneiro da Costa</h1>
-      <p>Estudante de Ciência da Computação - IME USP</p>
-      <button id="toggleTheme" title="Alternar Tema">🌞</button>
-    </div>
-  </header>
+/* style.css */
 
-  <main class="container">
-    <section id="sobre">
-      <h2>Sobre Mim</h2>
-      <p>
-        Meu nome é Nathália Ferreira Carneiro da Costa e estudo Ciência da Computação no IME-USP. Tenho um forte interesse por tecnologia, especialmente nas áreas de desenvolvimento de software e inteligência artificial. Sou movida pelo desafio de construir soluções que impactem positivamente o mundo, e quero contribuir com inovações significativas no campo da computação.
-      </p>
-    </section>
+/* Fonte padrão */
+body {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
 
-    <section id="trilhas">
-      <h2>Post: Caminhos no Bacharelado em Ciência da Computação (MAC0102 - 2025)</h2>
-      <p>
-        Ao longo da disciplina MAC0102 - Caminhos no Bacharelado em Ciência da Computação, tive a oportunidade de explorar diferentes possibilidades dentro do curso de BCC no IME-USP. Dentre as trilhas sugeridas, escolhi seguir as trilhas de <strong>Sistemas</strong> e <strong>Inteligência Artificial</strong>.
-      </p>
-      <p>
-        A trilha de Sistemas me encanta por sua base sólida e abrangente: ela me permite compreender o funcionamento interno dos computadores, desde os sistemas operacionais até redes e arquitetura. Admiro a elegância dos sistemas bem construídos, e quero estar apta a criar softwares robustos e eficientes.
-      </p>
-      <p>
-        Já a trilha de Inteligência Artificial representa, para mim, a fronteira da inovação tecnológica. Quero mergulhar em tópicos como aprendizado de máquina, redes neurais e processamento de linguagem natural. Tenho o desejo de participar do avanço dessa área que transforma radicalmente a maneira como interagimos com a informação e o mundo.
-      </p>
-      <p>
-        Com isso, pretendo construir minha trajetória acadêmica e profissional no cruzamento entre sistemas bem estruturados e IA inovadora. Essa escolha reflete meu perfil: alguém que gosta de criar soluções práticas com impacto inteligente.
-      </p>
-    </section>
-  </main>
+/* Tema claro */
+.light-theme {
+  background-color: #ffffff;
+  color: #111;
+}
 
-  <footer>
-    <p>&copy; 2025 Nathália Ferreira Carneiro da Costa</p>
-  </footer>
+/* Container centralizado */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
 
-  <script>
-    const toggleThemeButton = document.getElementById("toggleTheme");
-    toggleThemeButton.addEventListener("click", () => {
-      document.body.classList.toggle("light-theme");
-      toggleThemeButton.textContent = document.body.classList.contains("light-theme") ? '🌙' : '🌞';
-    });
-  </script>
-</body>
-</html>
+/* Cabeçalho */
+header {
+  background-color: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* Botão de alternar tema */
+button#toggleTheme {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+/* Área principal */
+main.container {
+  padding: 2rem 1rem;
+}
+
+/* Espaçamento entre seções */
+section + section {
+  margin-top: 2rem;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #004080;
+  color: #fff;
+}
