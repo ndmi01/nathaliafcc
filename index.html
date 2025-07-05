@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nathália Ferreira Carneiro da Costa</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nathália Ferreira Carneiro da Costa</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
     <h1>Nathália Ferreira Carneiro da Costa</h1>
+    <p>Estudante de Ciência da Computação - IME USP</p>
+    <button id="toggleTheme">Alternar Tema</button>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>
+        Meu nome é Nathália Ferreira Carneiro da Costa e estudo Ciência da Computação no IME-USP. Tenho um forte interesse por tecnologia, especialmente nas áreas de desenvolvimento de software e inteligência artificial. Sou movida pelo desafio de construir soluções que impactem positivamente o mundo, e quero contribuir com inovações significativas no campo da computação.
+      </p>
+    </section>
+
+    <section id="trilhas">
+      <h2>Post: Caminhos no Bacharelado em Ciência da Computação (MAC0102 - 2025)</h2>
+      <p>
+        Ao longo da disciplina MAC0102 - Caminhos no Bacharelado em Ciência da Computação, tive a oportunidade de explorar diferentes possibilidades dentro do curso de BCC no IME-USP. Dentre as trilhas sugeridas, escolhi seguir as trilhas de <strong>Sistemas</strong> e <strong>Inteligência Artificial</strong>.
+      </p>
+      <p>
+        A trilha de Sistemas me encanta por sua base sólida e abrangente: ela me permite compreender o funcionamento interno dos computadores, desde os sistemas operacionais até redes e arquitetura. Admiro a elegância dos sistemas bem construídos, e quero estar apta a criar softwares robustos e eficientes.
+      </p>
+      <p>
+        Já a trilha de Inteligência Artificial representa, para mim, a fronteira da inovação tecnológica. Quero mergulhar em tópicos como aprendizado de máquina, redes neurais e processamento de linguagem natural. Tenho o desejo de participar do avanço dessa área que transforma radicalmente a maneira como interagimos com a informação e o mundo.
+      </p>
+      <p>
+        Com isso, pretendo construir minha trajetória acadêmica e profissional no cruzamento entre sistemas bem estruturados e IA inovadora. 
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Nathália Ferreira Carneiro da Costa</p>
+  </footer>
+
+  <script>
+    const toggleThemeButton = document.getElementById("toggleTheme");
+    toggleThemeButton.addEventListener("click", () => {
+      document.body.classList.toggle("light-theme");
+    });
+  </script>
 </body>
 </html>
