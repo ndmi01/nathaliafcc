@@ -30,15 +30,7 @@ header {
   padding: 2rem 1rem;
 }
 
-/* Botão de alternar tema */
-button#toggleTheme {
-  margin-top: 0.5rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  background: #e0e0e0;
-  cursor: pointer;
-  border-radius: 0.25rem;
-}
+
 
 /* Área principal */
 main.container {
