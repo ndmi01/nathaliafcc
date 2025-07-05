@@ -1,91 +1,57 @@
-body {
-  margin: 0;
-  font-family: 'Fira Sans', sans-serif;
-  background-color: #0d0d0d;
-  color: #ccffcc;
-  transition: background-color 0.3s, color 0.3s;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nathália Ferreira Carneiro da Costa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Nathália Ferreira Carneiro da Costa</h1>
+      <p>Estudante de Ciência da Computação - IME USP</p>
+      <button id="toggleTheme" title="Alternar Tema">🌞</button>
+    </div>
+  </header>
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-}
+  <main class="container">
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>
+        Meu nome é Nathália Ferreira Carneiro da Costa e estudo Ciência da Computação no IME-USP. Tenho um forte interesse por tecnologia, especialmente nas áreas de desenvolvimento de software e inteligência artificial. Sou movida pelo desafio de construir soluções que impactem positivamente o mundo, e quero contribuir com inovações significativas no campo da computação.
+      </p>
+    </section>
 
-header {
-  background-color: #003300;
-  padding: 2rem 0;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-}
+    <section id="trilhas">
+      <h2>Post: Caminhos no Bacharelado em Ciência da Computação (MAC0102 - 2025)</h2>
+      <p>
+        Ao longo da disciplina MAC0102 - Caminhos no Bacharelado em Ciência da Computação, tive a oportunidade de explorar diferentes possibilidades dentro do curso de BCC no IME-USP. Dentre as trilhas sugeridas, escolhi seguir as trilhas de <strong>Sistemas</strong> e <strong>Inteligência Artificial</strong>.
+      </p>
+      <p>
+        A trilha de Sistemas me encanta por sua base sólida e abrangente: ela me permite compreender o funcionamento interno dos computadores, desde os sistemas operacionais até redes e arquitetura. Admiro a elegância dos sistemas bem construídos, e quero estar apta a criar softwares robustos e eficientes.
+      </p>
+      <p>
+        Já a trilha de Inteligência Artificial representa, para mim, a fronteira da inovação tecnológica. Quero mergulhar em tópicos como aprendizado de máquina, redes neurais e processamento de linguagem natural. Tenho o desejo de participar do avanço dessa área que transforma radicalmente a maneira como interagimos com a informação e o mundo.
+      </p>
+      <p>
+        Com isso, pretendo construir minha trajetória acadêmica e profissional no cruzamento entre sistemas bem estruturados e IA inovadora. Essa escolha reflete meu perfil: alguém que gosta de criar soluções práticas com impacto inteligente.
+      </p>
+    </section>
+  </main>
 
-h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  color: #aaffaa;
-}
+  <footer>
+    <p>&copy; 2025 Nathália Ferreira Carneiro da Costa</p>
+  </footer>
 
-h2 {
-  border-bottom: 2px solid #339933;
-  padding-bottom: 0.5rem;
-  margin-top: 2rem;
-}
+  <script>
+    const toggleThemeButton = document.getElementById("toggleTheme");
+    toggleThemeButton.addEventListener("click", () => {
+      document.body.classList.toggle("light-theme");
+      toggleThemeButton.textContent = document.body.classList.contains("light-theme") ? '🌙' : '🌞';
+    });
+  </script>
+</body>
+</html>
 
-button {
-  margin-top: 1rem;
-  padding: 0.5rem 1.2rem;
-  background-color: #009900;
-  color: #fff;
-  font-size: 1rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #00cc00;
-}
-
-main {
-  padding: 2rem 0;
-  line-height: 1.6;
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background-color: #003300;
-  font-size: 0.9rem;
-  color: #aaffaa;
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.5);
-}
-
-/* Tema Claro */
-.light-theme {
-  background-color: #fdfdfd;
-  color: #000;
-}
-
-.light-theme header,
-.light-theme footer {
-  background-color: #ccffcc;
-  color: #000;
-}
-
-.light-theme h1 {
-  color: #004400;
-}
-
-.light-theme button {
-  background-color: #339933;
-  color: #fff;
-}
-
-.light-theme button:hover {
-  background-color: #44aa44;
-}
